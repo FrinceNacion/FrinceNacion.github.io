@@ -1,0 +1,289 @@
+:root{
+    --background: #E1FAD1;
+    --text: #0D1B03;
+    --accent: #56B715;
+    --vio:#7964C9;
+    --primaryBtn: #C4F4A4;
+
+}
+
+body, html{
+    background-color: var(--background);
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    font-family: Work Sans,system-ui,sans-serif;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;  
+    padding-right: 200px;
+
+    color: var(--text);
+    font-family: Work Sans,system-ui,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+.wide{
+    width: 1141px;
+    height: 875px;
+    border-radius: 1141px;
+    margin-left: -100px;
+    margin-right: 300px;
+    margin-top: 50px;
+    background-color: var(--accent);
+    border: 120px solid var(--accent);
+    filter: blur(300px);
+    z-index: 0;
+}
+.container{
+    width: 100%;
+    height: fit-content;
+}
+.wrapper{
+    display: flex;
+}
+.item-menu{
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+}
+.sections{
+    display: flex;
+    flex-flow: row nowrap;
+    background-image: url(resources/Rectangle\ 2.svg);
+    background-size: cover;
+    height: 768px;
+}
+/* landing page */
+.bg1{
+    width: 668px;
+    height: 875px;
+    border-radius: 875px;
+    margin-left: -100px;
+    margin-right: 300px;
+    margin-top: 50px;
+    background-color: var(--accent);
+    border: 120px solid var(--accent);
+    filter: blur(300px);
+    z-index: 0;
+}
+.bg2{
+    width: 564px;
+    height: 504px;
+    border-radius: 564px;
+    border: 100px solid var(--texts);
+    background: var(--text);
+    filter: blur(60px);
+    margin-left: 500px;
+    margin-right: -360px;
+    margin-top: -150px;
+}
+.sections .Bg-landing,
+.sections .Fg-landing{
+    box-sizing: border-box;
+    flex: none;
+}
+.sections .Fg-landing{
+    margin-left: -100%;
+    padding-top: 40px;
+    padding-left: 100px;
+    z-index: 2;
+}
+.Fg-landing{
+    height: 600px;
+}
+#Name{
+    color: var(--text);
+    font-family: STIX Two Math;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+#Welcome{
+    color: var(--text);
+    font-family: Work Sans,system-ui,sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-top: 100px;
+}
+#codedL{
+    color: var(--text);
+    font-family: Work Sans,system-ui,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+/* end of landing page */
+@media only screen and (max-width: 760px){
+    .item-menu{
+        display: none;
+    }
+    .sections .Fg-landing{
+        margin-left: -100%;
+        padding-top: 30px;
+        padding-left: 20px;
+        z-index: 2;
+    }
+    #Name{
+        font-size: 128px;
+    }
+}
+
+/* about section */
+.sections .Bg-about,
+.sections .Fg-about{
+    box-sizing: border-box;
+    flex: none;
+}
+.sections .Fg-about{
+    margin-left: -100%;
+    z-index: 2;
+}
+.Fg-about{
+    width: 100%;
+}
+.bg3{
+    width: 700px;
+    height: 700px;
+    border-radius: 770px;
+    border: 100px solid var(--vio);
+    filter: blur(100px);
+    margin: 0;
+    margin-left: 1000px;
+}
+#about{
+    color: var(--text);
+    font-family: STIX Two Math;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin: 0;
+    padding-left: 40vw;
+}
+#aboutMe{
+    width: 50vw;
+    height: 368px;
+    color: var(--text);
+    font-family: Work Sans,system-ui,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-left: 7vw;
+    padding-top: 30px;
+}
+#myName{
+    color: var(--text);
+    font-family: STIX Two Math;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* end of about sect */
+@media only screen and (max-width: 760px){
+    .bg3{ 
+        margin-left: 350px;
+    }
+    #about{
+        padding-left: 15vw;
+    }
+    #aboutMe{
+        width: 90vw;
+        padding-left: 5vw;
+    }
+}
+
+/* project section */
+.sections .Bg-projects,
+.sections .Fg-projects{
+    box-sizing: border-box;
+    flex: none;
+}
+.sections .Fg-projects{
+    margin-left: -100%;
+    z-index: 2;
+}
+.Fg-projects{
+    width: 100%;
+}
+.bg4{
+    width: 520px;
+    height: 510px;
+    border-radius: 770px;
+    border: 100px solid #F6BE2C;
+    filter: blur(60px);
+    margin: 0;
+    margin-left: 400px;
+}
+#projects{
+    color: var(--text);
+    font-family: STIX Two Math;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin: 0;
+    padding-left: 40vw;
+}
+figure{
+    height: 500px;
+    margin-left: 34vw;
+    align-items: center;
+}
+#crane{
+    height: 70vh;
+}
+/* end of project sect */
+@media only screen and (max-width: 760px){
+    .Bg-projects{
+        padding-top: 11px;
+    }
+    .bg4{
+        margin-left: 50px;
+    }
+    #projects{
+        padding: 10px;
+        padding-top: 150px;
+        text-align: center; 
+    }
+    figure{
+        margin: 0;
+        margin-left: 10px;
+    }
+    #crane{
+        height: 50vh;
+    }
+}
+/* Todo: Footer, Contacts, Ham menu, and full responsiveness */
