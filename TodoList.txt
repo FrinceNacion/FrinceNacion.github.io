@@ -1,0 +1,7 @@
+Todo:
+  (js) Ham menu in moobile
+  (js) functions
+  (Projects) Make projects then display
+  (HTML) Contacts in footer
+  (CSS) Fully responsive
+  (CSS) Transform background onScroll
