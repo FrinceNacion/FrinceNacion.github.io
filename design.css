@@ -9,7 +9,6 @@
 
 body, html{
     background-color: var(--background);
-    user-select: none;
     width: 100%;
     height: 100%;
     padding: 0%;
@@ -17,6 +16,15 @@ body, html{
     display: flex;
     font-family: Work Sans,system-ui,sans-serif;
     overflow-x: hidden;
+}
+::-moz-selection { /* Code for Firefox */
+   color: var(--accent);
+  background: var(--text);
+}
+
+::selection {
+  color: var(--accent);
+  background: var(--text);
 }
 *{
     box-sizing: border-box;
