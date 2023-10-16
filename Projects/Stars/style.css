@@ -10,7 +10,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'M PLUS 1', sans-serif;
-    background-image: url(resources/Stars.svg);
+    background-image: url(/resources/Stars.svg);
     background-repeat:  no-repeat;
     background-size: cover;
 }
