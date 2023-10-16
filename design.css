@@ -4,7 +4,7 @@
     --accent: #56B715;
     --vio:#7964C9;
     --primaryBtn: #C4F4A4;
-
+    --unfinished: #FF5E5B;
 }
 
 body, html{
@@ -293,5 +293,47 @@ figure{
     #crane{
         height: 50vh;
     }
+}
+#projectSection{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.myProject{
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    align-self: center;
+    display: flex;
+}
+.myProject:hover{
+    transition: ease-in;
+    translate: y(5px);
+}
+.unfinished{
+    width: 20%;
+    height: 100px;
+    background-color: var(--unfinished);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+}
+#yellow{
+    background-image: url(resources/Stars.svg);
+    width: 80%;
+    height: 100px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #E0D429;
+    padding: 10px;
+}
+#creativePresentation{
+    width: 80%;
+    height: 100px;
+    background-color: #b39761ff;
+    color: #1c1c1cff;
+    background-image: url(resources/noise.webp);
+    border-style: solid;
+    padding: 10px;
 }
 /* Todo: Footer, Contacts, Ham menu, and full responsiveness */
