@@ -15,14 +15,14 @@ function reveal(){
     }
 }
 var active = false;
-var yellow = document.getElementById("myYe").play();
+var yellow = document.getElementById("myYe");
 const btn = document.querySelector("button");
 const timeStamps = [3300,4200,5000,5900];
 const sections = [1,2,3,4,5,6,7,8,9,10]
 
 function playYellow(){
     if (active != true) {
-      yellow.currentTime = 25;
+      yellow.play();  
       active = true;
       console.log("active");
       autoS(yellow);
@@ -33,11 +33,6 @@ function playYellow(){
       active =  false;
     }
 }
-
-function autoS(y) {
-  if (y.currentTime == 33) {
-    console.log("scroll now");
-  }
 }
 
 
