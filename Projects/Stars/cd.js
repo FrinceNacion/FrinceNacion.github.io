@@ -33,7 +33,7 @@ function playYellow(){
       active =  false;
     }
 }
-}
+
 
 
 window.addEventListener("scroll", reveal);
