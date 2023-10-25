@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Nandito yung mga links na ginamit natin, nadito yung css at javascript, dito rin yung sila naka preload -->
         <meta charset="utf-8">
         <link rel="preload" href="style.css" as="style"> 
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" href="cmds.js" as="script">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="preload" href="/resources/noise.webp" as="image">
     </head>
     <body>
+        <!-- navigation tab, logo at mga buttons na nakasunod sa mga users -->
         <nav>
             <div id="Group2">
                 <p><b>Group 2</b></p>
@@ -19,7 +22,8 @@
             </div>
         </nav>
         <main>
-            <header class="Frame container" id="sect1">
+            <div class="Frame container" id="sect1">
+                <!-- Introduction section -->
                 <div class="GroupPresentation">
                     <div class="solidRep"><h1 style="margin: 5px;"  class="inverse">Fundamental Considerations on 
                         Text Production and Consumption</h1><p  class="inverse" style="margin: 5px;"> A creative presentation by group 2</p></div>
@@ -29,14 +33,16 @@
                         </div>
                         <div class="intro">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                                ut labore et dolore magna aliqua. Parturient montes nascetur ridiculus mus mauris. Integer vitae 
-                                justo eget magna fermentum. Sem fringilla ut morbi tincidunt augue interdum velit euismod. Id semper 
-                                risus in hendrerit. Et netus et malesuada fames. Nisi vitae suscipit tellus mauris a diam maecenas. 
-                                Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Magna fermentum iaculis eu non diam 
-                                phasellus vestibulum lorem. Ultrices neque ornare aenean euismod elementum nisi quis. Nullam non nisi 
-                                est sit amet facilisis magna etiam. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. 
-                                Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Neque volutpat ac tincidunt vitae semper quis.
+                                In the contemporary milieu of information dissemination and assimilation, 
+                                an exploration of fundamental considerations pertaining to text production and 
+                                consumption assumes paramount significance. Within this sphere, the intricacies of 
+                                crafting and interpreting textual content serve as linchpins for effective communication. 
+                                Delving into the formal aspects of this subject matter, one encounters a rich tapestry of 
+                                linguistic, semiotic, and rhetorical elements that collectively contribute to the construction 
+                                and interpretation of written communication. This discourse endeavors to elucidate the 
+                                foundational principles that govern the production and consumption of textual information,
+                                providing a nuanced understanding of this essential domain within the broader context of
+                                communicative competence.
                             </p>
                         </div>
                     </div>
@@ -47,16 +53,17 @@
                         <div class="Bg-toc">
                             <div class="Bg1"></div>
                         </div>
+                        <!-- Table of contents-->
                         <div class="Fg-toc">
                             <ol>
                                 <li class="prime"><p>Introduction</p></li>
                                 <li class="prime">
                                     <p class="listItem">Factors that Affect Writing and Speaking</p>
                                     <ul>
-                                        <li  class="listItem"><p>Topic</p></li>
-                                        <li class="listItem"><p>Role of the Writer</p></li>
-                                        <li class="listItem"><p>Purpose of the Material</p></li>
-                                        <li class="listItem"><p>Target Audience</p></li>
+                                        <li  class="listItem"><a href="#topicSec">Topic</a></li>
+                                        <li class="listItem"><a href="#rotwSec">Role of the Writer</a></li>
+                                        <li class="listItem"><a href="#potmSec">Purpose of the Material</a></li>
+                                        <li class="listItem"><a href="#">Target Audience</a></li>
                                     </ul>
                                 </li>
                                 <br>
@@ -73,10 +80,80 @@
                         </div>
                     </div>
                 </div>
-            </header>
-            <section>
-                <!-- Main content -->
+            </div>
+            <section class="contentBox">
+                <!-- Table of contents pt.2 (mawawala tong part na'to pag nasa mobile/width: 760px na)-->
+                <div class="toc2Container">
+                    <div class="Head inverse">
+                        <h1>Table of contents</h1>
+                    </div>
+                    <div class="toc2">
+                        <div>
+                            <ul>
+                                <li class="prime listItem"><p>Introduction</p></li>
+                                        <li class="prime">
+                                            <p class="listItem">Factors that Affect Writing and Speaking</p>
+                                            <ul>
+                                                <li  class="listItem tocItem"><a href="#topicSec">Topic</a></li>
+                                                <li class="listItem  tocItem"><a href="#rotwSec">Role of the Writer</a></li>
+                                                <li class="listItem  tocItem"><a href="#potmSec">Purpose of the Material</a></li>
+                                                <li class="listItem"><p>Target Audience</p></li>
+                                            </ul>
+                                        </li>
+                                        <br>
+                                        <li class="prime">
+                                            <p class="listItem">Aspects of Professional and Academic Language</p>
+                                            <ul>
+                                                <li class="listItem"><p>Formality</p></li>
+                                                <li class="listItem"><p>Objectivity</p></li>
+                                                <li class="listItem"><p>Explicitness</p></li>
+                                                <li class="listItem"><p>Hedging</p></li>
+                                            </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nandito yung content natin (naka stack sila sa isa't isa sa isang container kaya may scrollbar)-->
+                <div class="contentPackage">
+                    <div class="inverse Head">
+                        <h1>Content</h1>
+                    </div>
+                    <div class="contentContainer">
+                        <div class="content" id="topicSec">
+                            <img src="/resources/Topic.jpg">
+                            <div class="topicNtext">
+                                <h1>Topic</h1>
+                                <p>
+                                    Topics can be everything, but by making your content suit the specific needs of your audience and considering your own knowledge when selecting a topic, this alone can make your readers invested into your work.
+                                    By personalizing your material and assessing your ability, you can ensure that your writing resonates effectively with your intended readers.
+                                    This method will not only enhance your relevance to the audience, but it will also contribute to a more successful presentation of information.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content" id="rotwSec">
+                            <img src="/resources/ROTW.jpg">
+                            <div class="topicNtext">
+                                <h1>Role of the writer</h1>
+                                <p>In academic and professional setting, it is important for the writer to make a content that resonates with his/her target audience. 
+                                    The writer's specific objectives, their knowledge in the subject, and the target audience. 
+                                    These are the parts that they need to carefully use to make a content that effectively gives information to their audience.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content" id="potmSec">
+                            <img src="/resources/purpose.jpg">
+                            <div class="topicNtext">
+                                <h1>Purpose of the Material</h1>
+                                <p>
+                                    Identifying the audience's demographics, education, prior knowledge, and expectations will affect how and what you write. 
+                                    Devices such as sentence structure, word choice, punctuation, and formal or informal language communicate tone and create a relationship between the writer and his or her audience                  
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
+        <script src="cmds.js"></script>
     </body>
 </html>
