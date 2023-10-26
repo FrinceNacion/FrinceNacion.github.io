@@ -67,7 +67,7 @@ for(var i = 0; i<tocParent.length; i++){
     tocParent[i].addEventListener("click", function(){
         this.classList.toggle(activeClass);
         let tocChild = Child[i];
-            if (tocChild.style.display === "block") {
+            if (tocChild.style.display == "block") {
                 tocChild.style.display = "none";
             } else {
               tocChild.style.display = "block";
