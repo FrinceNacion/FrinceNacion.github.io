@@ -63,8 +63,8 @@ const tocParent = document.querySelectorAll(".tocParent");
 let tocChild;
 
 for(var i = 0; i<tocParent.length; i++){
-    tocParent[i].addEventListener('click', function(){
-        tocParent[i].classList.toggle('active');
+    tocParent[i].addEventListener("click", function(){
+        tocParent[i].classList.toggle("active");
         tocChild = tocParent[i].nextElementSibling;
         if (content.style.display === "block") {
             tocChild.style.display = "none";
