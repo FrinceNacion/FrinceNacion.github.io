@@ -111,7 +111,7 @@ p{
     margin: auto;
     overflow: hidden;
 }
-.listItem:hover{
+.active, .listItem:hover{
     color: var(--hoverText) ;
     background: var(--textColor);
 }
