@@ -204,6 +204,8 @@ p{
     height: 100%;
     border-style: solid;
     color: var(--textColor);
+    padding: 5px;
+    overflow: hidden;
 }
 .contentPackage{
     width: 70%;
