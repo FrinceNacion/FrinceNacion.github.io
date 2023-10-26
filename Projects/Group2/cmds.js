@@ -60,12 +60,12 @@ sections.forEach((section) => {
 
 //collapsible
 const tocParent = document.querySelectorAll(".tocParent");    
-let tocChild;
+const activeClass = "active";
 
 for(var i = 0; i<tocParent.length; i++){
     tocParent[i].addEventListener("click", function(){
-        tocParent[i].classList.toggle("active");
-        tocChild = tocParent[i].nextElementSibling;
+        tocParent[i].classList.toggle(activeClass);
+        let tocChild = tocParent[i].nextElementSibling;
         if (content.style.display === "block") {
             tocChild.style.display = "none";
         } else {
