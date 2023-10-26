@@ -60,18 +60,17 @@ sections.forEach((section) => {
 
 //collapsible
 const tocParent = document.querySelectorAll(".tocParent");
-const tocChild = document.querySelectorAll(".tocItem");
 const activeClass = "active";
 
 for(var i = 0; i<tocParent.length; i++){
     tocParent[i].addEventListener("click", function(){
         tocParent[i].classList.toggle(activeClass);
-        let tocChild = tocChild[i];
-        if (tocChild.style.display === "block") {
-            tocChild.style.display = "none";
-        } else {
-          tocChild.style.display = "block";
-        }
+        let tocChild = tocItems[i];
+            if (tocChild.style.display === "block") {
+                tocChild.style.display = "none";
+            } else {
+              tocChild.style.display = "block";
+            }
     });
 }
 
