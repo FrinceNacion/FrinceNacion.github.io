@@ -1,4 +1,4 @@
-
+// This chunk of code came from Bradwoods' Digital garden website about table of contents
 const tocItems = document.querySelectorAll(".tocItem");//Eto yung mga item sa Table of contents part2 (Array)
 const sections = document.querySelectorAll(".content");//Eto naman yung tatlong content natin sa loob ng box (Array)
 
@@ -10,7 +10,7 @@ const options = {//Object
 }
 
 // highlight class line:75 sa css
-const HIGHLIGHT_CLASS = "highlight";
+const highLight = "highlight";
 
 //Ito ay isang MAP, ina-assign nya yung tatlong content sa corresponding item nya sa table of content
 const tableOfContentsMap = [...sections].reduce(//Reduce function ay nag re-reduce ng array sa pamamagitan ng pag-aasign ng function sa kada element ng array
@@ -22,16 +22,16 @@ const tableOfContentsMap = [...sections].reduce(//Reduce function ay nag re-redu
    {}
 );
 
-let selectedId = sections[0].id;// first Id ng section natin, in this case yung laman ng variable nato ay 'topicSec'
-console.log(selectedId);
+let sectionId = sections[0].id;// first Id ng section natin, in this case yung laman ng variable nato ay 'topicSec'
+console.log(sectionId);
 
 // function para i remove yung highlight class
 function removeHighlight(id) {
-   tableOfContentsMap[id].classList.remove(HIGHLIGHT_CLASS);
+   tableOfContentsMap[id].classList.remove(highLight);
 }
 // function para i add yung highlight class
 function addHighlight(id) {
-   tableOfContentsMap[id].classList.add(HIGHLIGHT_CLASS);
+   tableOfContentsMap[id].classList.add(highLight);
 }
 // Last function, nag ti-trigger to pag nag bago na yung section, i re-remove nya yung highlight class
 // sa luma at ia-add naman sa bago. I-imagine nyo lang na nasa pinaka gitna ng content box yung imaginary line
@@ -41,9 +41,9 @@ function onObserve(entries, observer) {
     //tinitignan ng if statement nato kung nag i-intersect ba yung border sa imaginary line sa pinaka gitna 
       if (entry.isIntersecting) {
          const { id } = entry.target;
-         removeHighlight(selectedId);
+         removeHighlight(sectionId);
          addHighlight(id);
-         selectedId = id;
+         sectionId = id;
       }
    });
 }
