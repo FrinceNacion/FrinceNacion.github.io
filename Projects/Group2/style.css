@@ -198,6 +198,9 @@ p{
     color: var(--hoverText);
     border-color: var(--textColor);
 }
+.tocChild{
+    display: none;
+}
 .toc2{
     display: flex;
     flex-direction: column;
