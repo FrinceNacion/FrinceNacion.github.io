@@ -207,6 +207,9 @@ p{
     padding: 5px;
     overflow: hidden;
 }
+.tocItem{
+    display: none;
+}
 .contentPackage{
     width: 70%;
     margin-left: 10px;
