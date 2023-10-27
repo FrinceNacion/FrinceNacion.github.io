@@ -57,24 +57,6 @@ const observer = new IntersectionObserver(onObserve, options);
 sections.forEach((section) => {
    observer.observe(section);
 });
-
-//collapsible
-const tocParent = document.querySelectorAll(".tocParent");
-const Child = document.querySelectorAll(".tocChild");
-const activeClass = "active";
-
-for(var i = 0; i<tocParent.length; i++){
-     (function(index){ 
-        tocParent[index].addEventListener("click", function() {
-            this.classList.toggle(activeClass);
-            let tocChild = Child[index];
-            if (tocChild.style.display == "block") {
-                tocChild.style.display = "none";
-            } else {
-                tocChild.style.display = "block";
-            }
-        });
-    })(i);
 }
 
 
