@@ -57,7 +57,7 @@ const observer = new IntersectionObserver(onObserve, options);
 sections.forEach((section) => {
    observer.observe(section);
 });
-}
+
 
 
 
