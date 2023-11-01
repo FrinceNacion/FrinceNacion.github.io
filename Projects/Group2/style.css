@@ -40,10 +40,7 @@ a{
     color: var(--textColor);
     text-decoration: none;
 }
-a::selection{
-    color: var(--hoverText);
-    background-color: var(--textColor);
-}
+a::selection,
 a:hover{
     color: var(--hoverText);
     background-color: var(--textColor);
@@ -74,8 +71,11 @@ nav{
 }
 .highlight{
     background-color: var(--textColor);
-    content: "You are here";
-    color: var(--hoverText);
+}
+.highlight a,
+.highlight a::after {
+  color: var(--hoverText);
+  content: " \2190"; /* Arrow */
 }
 #Group2, p{
     margin-top: 0;
