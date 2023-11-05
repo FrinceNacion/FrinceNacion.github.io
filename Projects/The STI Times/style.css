@@ -205,7 +205,7 @@ img,
 }
 
 #fig1 {
-  background-image: url(fountain-pen-on-paper.jpg);
+  background-image: url(/resources/fountain-pen-on-paper.jpg);
   background-size: cover;
 }
 
@@ -215,13 +215,13 @@ img,
   gap: 10px;
 }
 #fig2 {
-  background-image: url(Topic.jpg);
+  background-image: url(/resources/Topic.jpg);
   background-size: cover;
   width: 55%;
 }
 
 #fig3 {
-  background-image: url(ROTW.jpg);
+  background-image: url(/resources/ROTW.jpg);
   background-size: cover;
   width: 40%;
   margin-left: 10px;
@@ -335,11 +335,11 @@ img,
 }
 
 #dog1 {
-  background-image: url(cloud.jpg);
+  background-image: url(/resources/cloud.jpg);
   background-size: cover;
 }
 #dog2 {
-  background-image: url(kisses\ .jpg);
+  background-image: url(/resources/kisses\ .jpg);
   background-size: cover;
 }
 
