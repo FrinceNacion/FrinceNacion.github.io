@@ -226,12 +226,14 @@ img,
 #fig2 {
   background-image: url(/resources/Topic.jpg);
   background-size: cover;
+  background-position: 50% 50%;
   width: 55%;
 }
 
 #fig3 {
   background-image: url(/resources/ROTW.jpg);
   background-size: cover;
+  background-position: 50% 50%;
   width: 40%;
   margin-left: 10px;
   margin-right: 10px;
