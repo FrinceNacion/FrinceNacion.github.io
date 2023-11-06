@@ -6,9 +6,11 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() >= triggerPoint) {
       $(".headNav").addClass("fixed-header");
+      $(".collapsible").addClass("fixed-header toc-fixed");
       console.log($(window).scrollTop());
     } else {
       $(".headNav").removeClass("fixed-header");
+      $(".collapsible").removeClass("fixed-header toc-fixed");
     }
   });
 
@@ -20,4 +22,8 @@ $(document).ready(function () {
       "/" +
       dateNow.getFullYear()
   );
+
+  $(document).ready(function () {
+    $(".collapsible").collapsible();
+  });
 });
